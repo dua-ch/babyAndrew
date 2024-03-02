@@ -1,0 +1,74 @@
+.outline-title {
+  text-shadow: 1px 1px 0 #00EC46, -1px -1px 0 #00EC46, 1px -1px 0 #00EC46, -1px 1px 0 #00EC46, 1px 1px 0 #00EC46;
+}
+
+.btnGreen{
+  color: #fff;
+  font-weight: bold;
+  padding: 14px 20px;
+  min-width: 180px;
+  text-align: center;
+  border:2px solid #fff;
+  border-radius: 5px;
+  margin: -20px 0 20px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 14px;
+  text-transform: uppercase;
+ }
+ 
+ .btnGreen:hover{
+  background: #00EC46;
+  border-color: #00EC46;
+ }
+ 
+ .flex-column{
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 50px
+ }
+ 
+ .flex-column svg{
+  width: 100%
+ }
+
+ .bg-primary{
+   background: #00EC46 !important;
+ }
+
+ .text-primary{
+  color: #00EC46 !important;
+ }
+
+ .textCenter{
+  text-align: center;
+ }
+
+ .centerimg{
+  margin: auto;
+ }
+
+ .bgGreen{
+  background: #002D0D;
+ }
+ @media (max-width:767px){
+  .btnRed{
+    font-size: 14px;
+    padding: 8px 15px 10px;
+    min-width: 140px;
+  }
+
+  .h-screen {
+    height: 58vh !important;
+}
+ }
+
+ 
+ @media (max-width:479px){
+  .btnRed{
+  bottom: -20px;
+  }
+ }
