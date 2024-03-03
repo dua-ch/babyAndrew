@@ -54,6 +54,21 @@
  .bgGreen{
   background: #002D0D;
  }
+
+.overlay{
+  position: relative;
+}
+ 
+ .overlay:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../public/overlay.png') no-repeat center;
+  background-size: cover;
+  left: 0;
+  top: 0
+ }
  @media (max-width:767px){
   .btnRed{
     font-size: 14px;

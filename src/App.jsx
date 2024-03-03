@@ -3,7 +3,7 @@ import { Graphics, TabletGraphic } from "./assets/constant";
 import "./App.css";
 import tate from '../public/tate.png';
 import kidImg from '../public/kidImg.png';
-
+import bannerImg from '../public/newtokenimage.png'
 
 function App() {
   const [q1, setq1] = useState(false);
@@ -86,8 +86,9 @@ function App() {
       </header>
       <main>
         {/* Hero  */}
-        <section className="bg-[url(/hero-bg.png)] bg-cover bg-center bg-no-repeat h-screen sm:h-[95vh]">
-          <div className="h-full flex items-end">
+        <section className="overlay ">
+          <div className="h-full ">
+            <img src={bannerImg} alt="" style={{maxWidth:'700px', margin:'0 auto '}}/>
             <div className="bg-black w-full">
               <article className="max-w-lg sm:max-w-xl mx-auto">
                 <h3 className="text-white text-center text-[1.875rem] leading-[2.344rem] sm:text-[2.188rem] sm:leading-[2.734rem] md:text-[2.625rem] md:leading-[3.281rem] font-poppins font-bold">
@@ -467,10 +468,8 @@ function App() {
             BUY & JOIN
           </h3>
         </div>
-        <div className="flex items-center justify-center bg-center bg-cover flex-column md:mt-[5px] ">
+        <div className="flex items-center justify-center bg-center bg-cover flex-column md:mt-[5px] p-0">
           <img src={kidImg} alt="" />
-  
-
         </div>
         <div className="flex items-center justify-center ">
         <a href="raydiumswap.io" className="btnGreen" target="_blank">Buy on RaydiumSwap</a>
