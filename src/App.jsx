@@ -88,7 +88,7 @@ function App() {
         {/* Hero  */}
         <section className="overlay ">
           <div className="h-full ">
-            <img src={bannerImg} alt="" style={{maxWidth:'700px', margin:'0 auto '}}/>
+            <img src={bannerImg} alt="" style={{maxWidth:'700px', margin:'0 auto', width:'100%'}}/>
             <div className="bg-black w-full" style={{position:'relative', zIndex:'1'}} > 
               <article className="max-w-lg sm:max-w-xl mx-auto">
                 <h3 className="text-white text-center text-[1.875rem] leading-[2.344rem] sm:text-[2.188rem] sm:leading-[2.734rem] md:text-[2.625rem] md:leading-[3.281rem] font-poppins font-bold">
