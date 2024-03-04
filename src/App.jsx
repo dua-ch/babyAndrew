@@ -3,8 +3,8 @@ import { Graphics, TabletGraphic } from "./assets/constant";
 import "./App.css";
 import tate from '../public/tate.png';
 import kidImg from '../public/kidImg.png';
-import bannerImg from '../public/newtokenimage.png'
-
+import bannerImg from '../public/newtokenimage.jpg'
+import video from '../public/video.mp4'
 function App() {
   const [q1, setq1] = useState(false);
   const [q2, setq2] = useState(false);
@@ -88,7 +88,7 @@ function App() {
         {/* Hero  */}
         <section className="overlay ">
           <div className="h-full ">
-            <img src={bannerImg} alt="" style={{maxWidth:'700px', margin:'0 auto', width:'100%'}}/>
+            <img src={bannerImg} alt="" style={{maxWidth:'700px', margin:'30px auto 0', width:'100%', borderRadius:'50%'}}/>
             <div className="bg-black w-full" style={{position:'relative', zIndex:'1'}} > 
               <article className="max-w-lg sm:max-w-xl mx-auto">
                 <h3 className="text-white text-center text-[1.875rem] leading-[2.344rem] sm:text-[2.188rem] sm:leading-[2.734rem] md:text-[2.625rem] md:leading-[3.281rem] font-poppins font-bold">
@@ -442,11 +442,17 @@ function App() {
           </div>
         </section>
 
-        {/* Video Section  */}
-        <div className="relative mt-8 scroll-m-4 bg-[url(/pattern.png)] bg-cover bg-center bg-no-repeat" id="tokenomics">
-          <div className=" h-80 sm:h-96 md:h-[450px]">
+        <div className="relative mt-8 scroll-m-4" id="tokenomics">
+          <div className="bg-videoOverlay h-80 sm:h-96 md:h-[450px]">
             <div className="max-w-6xl mx-auto px-2.5 h-full">
-              
+              <video
+                className="object-cover absolute left-0 w-full -z-[1] h-full"
+                autoPlay
+                muted
+                playsInline
+                loop
+                src={video}
+              ></video>
               <div className="flex justify-center items-center h-full">
                 <div>
                   <h3 className="text-white font-poppins text-[1.375rem] leading-[1.625rem] sm:text-[1.625rem] sm:leading-[1.95rem] md:text-[2rem]  md:leading-[2.4rem] font-semibold text-center">
@@ -460,6 +466,25 @@ function App() {
             </div>
           </div>
         </div>
+
+        {/* Video Section  */}
+        {/* <div className="relative mt-8 scroll-m-4  bg-cover bg-center bg-no-repeat" id="tokenomics">
+          <div className=" h-80 sm:h-96 md:h-[450px]">
+            <div className="max-w-6xl mx-auto px-2.5 h-full">
+          
+              <div className="flex justify-center items-center h-full">
+                <div>
+                  <h3 className="text-white font-poppins text-[1.375rem] leading-[1.625rem] sm:text-[1.625rem] sm:leading-[1.95rem] md:text-[2rem]  md:leading-[2.4rem] font-semibold text-center">
+                    <span className="text-primary">TOTAL</span> SUPPLY
+                  </h3>
+                  <h3 className="font-poppins text-white font-bold text-[2rem] leading-[2.5rem] sm:text-[5rem] sm:leading-[6.25rem]">
+                    1,000,000,000
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
         {/* End Video Section  */}
 
        <div className=" bg-[url(/bgGradient.png)] bg-cover bg-center bg-no-repeat ">   
@@ -468,8 +493,8 @@ function App() {
             BUY & JOIN
           </h3>
         </div>
-        <div className="flex items-center justify-center bg-center bg-cover flex-column md:mt-[5px] p-0">
-          <img src={kidImg} alt="" />
+        <div className="flex items-center justify-center bg-center bg-cover flex-column md:mt-[5px] buyImg">
+          <img src={kidImg} alt="" style={{borderRadius:'10px'}}/>
         </div>
         <div className="flex items-center justify-center ">
         <a href="raydiumswap.io" className="btnGreen" target="_blank">Buy on RaydiumSwap</a>
