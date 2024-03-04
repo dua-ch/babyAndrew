@@ -86,9 +86,11 @@ function App() {
       </header>
       <main>
         {/* Hero  */}
-        <section className="overlay ">
-          <div className="h-full ">
-            <img src={bannerImg} alt="" style={{maxWidth:'700px', margin:'30px auto 0', width:'100%', borderRadius:'50%'}}/>
+        <section className="bg-[url(/newtokenimage.jpg)] bg-cover bg-center bg-no-repeat h-screen sm:h-[120vh] overlay">
+          <div className="h-full flex items-end ">
+            {/* <div style={{maxHeight:'500px', margin:'30px auto 0', width:'100%', borderRadius:'50%'}}>
+            <img src={bannerImg} alt="" style={{ width:'100%'}}/>
+            </div> */}
             <div className="bg-black w-full" style={{position:'relative', zIndex:'1'}} > 
               <article className="max-w-lg sm:max-w-xl mx-auto">
                 <h3 className="text-white text-center text-[1.875rem] leading-[2.344rem] sm:text-[2.188rem] sm:leading-[2.734rem] md:text-[2.625rem] md:leading-[3.281rem] font-poppins font-bold">
@@ -497,7 +499,7 @@ function App() {
           <img src={kidImg} alt="" style={{borderRadius:'10px'}}/>
         </div>
         <div className="flex items-center justify-center ">
-        <a href="raydiumswap.io" className="btnGreen" target="_blank">Buy on RaydiumSwap</a>
+        <a href="https://raydiumswap.io" className="btnGreen" target="_blank">Buy on RaydiumSwap</a>
         </div>
       
 
