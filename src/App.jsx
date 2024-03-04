@@ -101,12 +101,12 @@ function App() {
                     {/* SOL{" "} */}
                     <button
                       onClick={handleTextCopy}
-                      value={"8D2NrTQegpDE8ZwR6s9YGo3SATqZryoPqVMxN7Qu5cwh"}
+                      value={"6oTxdPD8qUfbXeugsdgRx6ZXrTVAsbZcUGroRBM6eEBK"}
                       className="break-words"
                     > 
                       {" "}
                       Contract Address:
-                      <br />8D2NrTQegpDE8ZwR6s9YGo3SATqZryoPqVMxN7Qu5cwh
+                      <br />6oTxdPD8qUfbXeugsdgRx6ZXrTVAsbZcUGroRBM6eEBK
                       <br />Ticker:
                     </button>
                     <span className="text-sm font-sans font-normal px-2 absolute left-0 -top-5 hidden group-hover:inline-block bg-gray-800 border border-black rounded-sm text-white">
@@ -135,7 +135,7 @@ function App() {
                   </div>
                 </a>
                 <a
-                  href="https://twitter.com/4547uspresident"
+                  href="https://twitter.com/babyandrewtate"
                   target="_blank"
                   rel="noreferrer"
                   className="transition-all ease-in-out duration-500"
@@ -698,7 +698,7 @@ function App() {
                 </div>
               </a>
               <a
-                href="https://twitter.com/4547uspresident"
+                href="https://twitter.com/babyandrewtate"
                 target="_blank"
                 rel="noreferrer"
                 className="transition-all ease-in-out duration-500"
