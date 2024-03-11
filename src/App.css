@@ -63,7 +63,7 @@
   content:'';
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url('../public/overlay.png') no-repeat center;
   left: 0;
   top: 0
